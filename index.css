@@ -213,3 +213,9 @@ header {
   width: 100%;
 
 }
+
+.images {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
