@@ -219,3 +219,8 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
+.imgLogo {
+  height: 100px;
+  width: 100px;
+}
