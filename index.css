@@ -122,7 +122,6 @@ header {
   width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
-  margin-bottom: 5px;
 }
 
 .clientTable2 th {
@@ -198,7 +197,7 @@ header {
 }
 
 .imgDescp {
-  margin-top: 50px;
+  margin-top: 10px;
   height: 200px;
   width: 200px;
 }
@@ -211,7 +210,6 @@ header {
 }
 
 .logoInfo {
-  margin-top: 10px;
   width: 100%;
 }
 
