@@ -209,11 +209,8 @@ header {
   align-items: center;
 }
 
-.logoInfo {
-  width: 100%;
-}
-
 .tableImg {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
