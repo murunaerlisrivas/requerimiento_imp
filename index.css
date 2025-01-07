@@ -55,6 +55,7 @@ header {
   border: 2px solid black;
   margin-left: 20px;
   width: 30%;
+  line-height: 0px;
 }
 
 .centerDocument {
