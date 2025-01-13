@@ -51,3 +51,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+// Selecciona los elementos de prioridad y fecha
+let prioridadSpan = document.getElementById("prioridadSpan");
+let fechaSpan = document.getElementById("fechaSpan");
+let prioridadDiv = document.getElementById("prioridadDiv");
+let fechaDiv = document.getElementById("fechaDiv");
+
+let prioridad = prioridadSpan.textContent.trim();
+let fecha = fechaSpan.textContent.trim();
+
+
+if (prioridad === "Urgente") {
+    prioridadSpan.className = "redColor";
+    fechaSpan.className = "redColor";
+} else {
+    prioridadSpan.className = "normal";
+    fechaSpan.className = "normal";
+}
+
+
+if (!prioridad) {
+    prioridadDiv.style.display = "none";
+}
+
+if (!fecha) {
+    fechaDiv.style.display = "none";
+}
