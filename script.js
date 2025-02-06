@@ -61,8 +61,9 @@ let fechaDiv = document.getElementById("fechaDiv");
 let prioridad = prioridadSpan.textContent.trim();
 let fecha = fechaSpan.textContent.trim();
 
+let valoresUrgentes = ["Urgente", "Urgent", "緊迫的"];
 
-if (prioridad === "Urgente") {
+if (valoresUrgentes.includes(prioridad)) {
     prioridadSpan.className = "redColor";
     fechaSpan.className = "redColor";
 } else {
