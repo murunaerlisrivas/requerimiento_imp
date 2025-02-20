@@ -26,13 +26,15 @@
             </div>
         </div>
     </header>
-
     <div class="centerDocument">
         <div class="containerPdf">
             <div class="detalleCot">
                 <div class="prioridad">
-                    <div id="prioridadDiv">Prioridad: <span id="prioridadSpan">Urgent</span></div>
-                    <div id="fechaDiv">Fecha de última recepción:<span id="fechaSpan"></span></div>
+                    <div id="prioridadDiv">Prioridad: <span id="prioridadSpan">&lt;&lt;[PrioridadRequest]&gt;&gt;</span>
+                    </div>
+                    <div id="fechaDiv">Fecha de última recepción:
+                        <span id="fechaSpan">&lt;&lt;TEXT([Fecha de recepción], "DD/MM/YYYY")&gt;&gt;</span>
+                    </div>
                 </div>
                 <table class="clientTable2">
                     <thead>
@@ -43,111 +45,102 @@
                     </thead>
                     <tbody>
                         <tr class="feature">
-                            <td class="alt border">Categoría</td>
-                            <td class="desp border">d</td>
-                        </tr>
-                        <tr class="feature">
-                            <td class="alt border">Subcategoría</td>
-                            <td class="desp border"></td>
-                        </tr>
-                        <tr class="feature">
                             <td class="alt border">Dimensiones</td>
-                            <td class="desp border"></td>
+                            <td class="desp border">&lt;&lt;[Medidas del producto]&gt;&gt;</td>
                         </tr>
                         <tr class="feature">
-                            <td class="alt border">Peso</td>
-                            <td class="desp border"></td>
+                            <td class="alt border">Peso unitario del producto</td>
+                            <td class="desp border">&lt;&lt;[Peso]&gt;&gt; &lt;&lt;[Unidad de peso].[Unidad de
+                                medida]&gt;&gt;</td>
                         </tr>
                         <tr class="feature">
                             <td class="alt border">Color</td>
-                            <td class="desp border"></td>
+                            <td class="desp border">&lt;&lt;[Color]&gt;&gt;</td>
                         </tr>
                         <tr class="feature">
-                            <td class="alt border">Marca</td>
-                            <td class="desp border"></td>
+                            <td class="alt border">Cantidad de unidades por Inner</td>
+                            <td class="desp border">&lt;&lt;[Cantidad Inner]&gt;&gt;</td>
                         </tr>
                         <tr class="feature">
-                            <td class="alt border">Modelo</td>
-                            <td class="desp border"></td>
+                            <td class="alt border">Cantidad de unidades por Master</td>
+                            <td class="desp border">&lt;&lt;[Cantidad Master]&gt;&gt;</td>
                         </tr>
                         <tr class="feature">
-                            <td class="alt border">Viscosidad</td>
-                            <td class="desp border"></td>
+                            <td class="alt border">INCOTERM</td>
+                            <td class="desp border">&lt;&lt;[INCOTERM]&gt;&gt;</td>
                         </tr>
                         <tr class="feature">
-                            <td class="alt border">Indíce de carga</td>
-                            <td class="desp border"></td>
-                        </tr>
-                        <tr class="feature">
-                            <td class="alt border">Indíce de velocidad</td>
-                            <td class="desp border"></td>
-                        </tr>
-                        <tr class="feature">
-                            <td class="alt border">Tipo de neumático</td>
-                            <td class="desp border"></td>
+                            <td class="alt border">Cantidades a ofertar</td>
+                            <td class="desp border">
+                                <p>&lt;&lt;Start: [Related Request Details]&gt;&gt;</p>
+                                <p>&lt;&lt;[Nro no editable]&gt;&gt; - &lt;&lt;[Cantidad]&gt;&gt;
+                                    &lt;&lt;[Unidad].[Unidad de medida]&gt;&gt;</p>
+                                <p>&lt;&lt;End&gt;&gt;</p>
+                            </td>
                         </tr>
                         <tr class="feature">
                             <td class="alt border">Otras especificaciones</td>
-                            <td class="desp border"></td>
+                            <td class="desp border">&lt;&lt;[Otras especificaciones]&gt;&gt;</td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="images">
-                    <img style="height: 200px;"
-                        src="https://images.lider.cl/wmtcl?source=url[file:/productos/858830a.jpg]&scale=size[449x449]&sink" />
-                    <img style="height: 200px;"
-                        src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/sodimacCL/1812130_01/w=1500,h=1500,fit=pad" />
-                </div>
                 <div class="tableImg">
-                    <p>Cantidad de logos por producto: </p>
+                    <p>Cantidad de logos por producto: &lt;&lt;[Cantidad por producto]&gt;&gt;</p>
                     <table class="logoTable">
                         <thead>
                             <tr>
-                                <th class=""></th>
+                                <th></th>
                                 <th class="alt">Logo 1</th>
                                 <th class="alt">Logo 2</th>
                                 <th class="alt">Logo 3</th>
-
+                            </tr>
                         </thead>
                         <tbody>
                             <tr class="feature">
-                                <td class="alt border">Material</td>
-                                <td class="desp border">&lt;&lt;[Categoría]&gt;&gt;</td>
-                                <td class="desp border"></td>
-                                <td class="desp border"></td>
+                                <td class="alt border">Tipo de acabado</td>
+                                <td class="desp border">&lt;&lt;[Técnica logo I].[tipo de acabado]&gt;&gt;</td>
+                                <td class="desp border">&lt;&lt;[Técnica logo II].[tipo de acabado]&gt;&gt;</td>
+                                <td class="desp border">&lt;&lt;[Técnica logo III].[tipo de acabado]&gt;&gt;</td>
                             </tr>
                             <tr class="feature">
-                                <td class="alt border">Subcategoría</td>
-                                <td class="desp border"></td>
-                                <td class="desp border"></td>
-                                <td class="desp border"></td>
+                                <td class="alt border">Paleta de colores</td>
+                                <td class="desp border">&lt;&lt;[Paleta de colores]&gt;&gt;</td>
+                                <td class="desp border">&lt;&lt;[Paleta de colores II]&gt;&gt;</td>
+                                <td class="desp border">&lt;&lt;[Paleta de colores III]&gt;&gt;</td>
                             </tr>
                             <tr class="feature">
                                 <td class="alt border">Descripción</td>
-                                <td class="desp border"></td>
-                                <td class="desp border"></td>
-                                <td class="desp border"></td>
+                                <td class="desp border">&lt;&lt;[Descripción]&gt;&gt;</td>
+                                <td class="desp border">&lt;&lt;[Descripción II]&gt;&gt;</td>
+                                <td class="desp border">&lt;&lt;[Descripción III]&gt;&gt;</td>
                             </tr>
                             <tr class="feature">
                                 <td class="alt border">Imagen</td>
                                 <td class="desp border">
-                                    <div></div>
-
+                                    <div class="imgLogo">&lt;&lt;[Img logo]&gt;&gt;</div>
                                 </td>
                                 <td class="desp border">
-                                    <div></div>
+                                    <div class="imgLogo">&lt;&lt;[Img logo II]&gt;&gt;</div>
                                 </td>
                                 <td class="desp border">
-
-
+                                    <div class="imgLogo">&lt;&lt;[Img III]&gt;&gt;</div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <div class="imagenProduct">
+                    <p>Imagen del producto</p>
+                    <div class="images">
+                        <img src="https://i5.walmartimages.cl/asr/0c61f492-6f66-4c55-a764-1b9fcd85ebc4.11075add724475f918a167b6c62e594a.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+                            class="imgDescp" />
+                        <img src="https://trazosideas.cl/wp-content/uploads/2024/06/9-300x300.png" class="imgDescp" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 

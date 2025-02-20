@@ -204,3 +204,12 @@ header {
   color: black;
   font-weight: normal;
 }
+
+.ofertas {
+  margin-top: 60px;
+}
+
+.imagenProduct {
+  margin-top: 20px;
+  width: 100%;
+}
