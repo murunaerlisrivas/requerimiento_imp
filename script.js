@@ -52,6 +52,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let cantidadLogos = parseInt(document.querySelector(".cantidad-logos")?.innerText.trim() || 0);
+    let tabla = document.querySelector(".logoTable");
+    if (cantidadLogos === 0) {
+        tabla.style.display = "none";
+    }
+});
+
 // Selecciona los elementos de prioridad y fecha
 let prioridadSpan = document.getElementById("prioridadSpan");
 let fechaSpan = document.getElementById("fechaSpan");
