@@ -3,11 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     rows.forEach(row => {
         const despCell = row.querySelector("td.desp.border");
-        if (!despCell || (!despCell.textContent.trim() && !despCell.querySelector("div"))) {
-            row.style.display = "none"; // Oculta la fila si la celda está vacía
+        if (!despCell) return;
+
+        const cellText = despCell.textContent.trim();
+
+        if (cellText === "" || cellText === "0") {
+            row.style.display = "none";
         }
     });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
