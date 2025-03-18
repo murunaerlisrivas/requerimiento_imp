@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!despCell) return;
 
         const cellText = despCell.textContent.trim();
+        const hasImage = despCell.querySelector("img");
 
-        if (cellText === "" || cellText === "0") {
+        if ((cellText === "" || cellText === "0") && !hasImage) {
             row.style.display = "none";
         }
     });
